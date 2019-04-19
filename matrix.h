@@ -23,10 +23,7 @@ public:
 	
 	int dim1, dim2;
 	bool is_square() {
-		if (i == j) {
-			return true;
-		}
-		return false;
+		retrun (i==j);
 	}
 	int main_diagonal_sum() {
 		if (is_square()) {
