@@ -18,7 +18,6 @@ public:
 		dim1 = i;
 		dim2 = j;
 	}
-	int main_diagonal = 0;
 	vector <vector<int>> data;
 	
 	int dim1, dim2;
@@ -26,13 +25,14 @@ public:
 		retrun (i==j);
 	}
 	int main_diagonal_sum() {
+		int sum = 0;
 		if (is_square()) {
 			int col = 0;
 			for (int row = 0; row < i; row++) {
-				main_diagonal += mat[row][col];
+				sum += mat[row][col];
 				col++;
 			}
-			return main_diagonal;
+			return sum;
 		}
 		//the function must return a value
 	}
